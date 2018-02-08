@@ -1,0 +1,42 @@
+{
+  "name": "hisorange/docjectot",
+  "description": "Docjector - PHP DocComment Injection!",
+  "keywords": ["comment", "injection", "code generation", "code manipulation", "laravel", "hisorange"],
+  "homepage": "https://github.com/hisorange/docjector",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+      {
+          "name": "Varga Zsolt (hisorange)",
+          "email": "hello@hisorange.me"
+      }
+  ],
+  "require": {
+      "php": ">=5.6.0"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "~5.0 || ~6.0",
+      "satooshi/php-coveralls": "^1.0"
+  },
+  "autoload": {
+      "psr-4": {
+          "hisorange\\Docjector\\": "src/"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "hisorange\\Docjector\\Test\\": "tests/"
+      }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+      "laravel": {
+          "providers": [
+              "hisorange\\Docjector\\ServiceProvider"
+          ],
+          "aliases": {
+              "Browser": "hisorange\\Docjector\\Facade"
+          }
+      }
+  }
+}
